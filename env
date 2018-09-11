@@ -1,6 +1,6 @@
 #! /bin/bash
 
-echo "Installing net-tools"
+echo "Installing net-tools packages"
 
 apt install net-tools
 
