@@ -1,0 +1,19 @@
+#! /bin/bash
+
+echo "Installing net-tools"
+
+apt install net-tools
+
+echo "Inserting dependencies"
+
+echo "deb http://us.archive.ubuntu.com/ubuntu xenial main restricted" >> /etc/apt/sources.list
+echo "deb http://security.ubuntu.com/ubuntu xenial-security main restricted" >> /etc/apt/sources.list
+echo "deb http://us.archive.ubuntu.com/ubuntu xenial-updates main restricted" >> /etc/apt/sources.list
+
+echo "Updating repositories"
+
+apt-get update
+
+echo "Installing RPC"
+
+apt install rpcbind
