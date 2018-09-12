@@ -4,8 +4,7 @@
 
 /* Check if args passed are OK */
 void checkArgs(int argc, char *argv[]) {
- 	if(argc != 4)
-	{
+ 	if(argc != 4) {
 		fprintf(stderr,"How to use: %s <HOST> <FIRST_VALUE> <SECOND_VALUE>\n", argv[0]);
 		exit(0);
  	} 
@@ -22,7 +21,8 @@ void printResults(operando ops, CLIENT * clnt) {
 void main(int argc, char *argv[]) {
  	checkArgs(argc, argv); 
  	
-	int x, y;
+	int x;
+	int y;
 
  	CLIENT * clnt = clnt_create(argv[1], CALCULADORA, CALCULADORA_VERSAO, "udp"); 	
 
